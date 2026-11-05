@@ -11,6 +11,6 @@ function riverCaseHTML(visual,thumbs){
  <section class="river-section" id="river-interface"><p class="label">04 / INTERACTION & VISUAL DESIGN</p><h2>让声音的变化，有迹可循。</h2><div class="river-decisions"><article><h3>长按留声</h3><p>用持续按压组织录音动作，让“留下声音”成为一次明确的参与行为，并在录音界面呈现位置与时长。</p></article><article><h3>空间化聆听</h3><p>以河流路径和个人所在位置组织声音相遇，让地图同时承担导航、探索与声景叙事的作用。</p></article><article><h3>波形与状态反馈</h3><p>通过波形、时长及风化状态，把难以直接观察的声音演变呈现在可阅读的界面中。</p></article></div><div class="river-device-pair">${image('06','录音投递界面','桌面端录音投递界面｜通过长按留声，参与共同声景。')}${image('09','移动端录音投递','移动尺寸布局截图｜突出位置、录音时长与长按操作。','river-mobile')}</div>${image('08','声点聆听与风化波形','声点详情｜查看时间、时长和熵值，波形显示声音风化后的视觉状态。')}</section>
  <section class="river-section" id="river-reflection"><p class="label">05 / DESIGN REFLECTION</p><h2>留下、相遇，最终消逝。</h2><p>作品把“遗忘”写进声音的生命周期：录音经历风化、降解与融合后，原始文件按系统机制删除。消逝因此具有实际的技术过程，也成为观众能够感知的时间经验。每一次进入，都面对一条已经发生变化的河；每一次留声，也都意味着将一段属于自己的记忆交给流动。</p><p>《音流·溯城》邀请人们在城市的持续更新中放慢脚步，倾听个体痕迹如何汇入共同的环境，以及一段声音在失去原有形状之后，还能留下怎样的余韵。</p></section>
  <div class="river-source"><a href="assets/docs/river-introduction.txt" target="_blank" rel="noopener">阅读完整作品介绍与素材说明</a></div>
- <footer class="reader-end"><a href="#">返回视觉作品集</a><button data-next-project="tuning">下一个研究 / 律学平台</button></footer>
+ <footer class="reader-end"><a href="#">返回作品集</a><button data-next-project="tuning">下一个研究 / 律学平台</button></footer>
  </article></div>`;
 }

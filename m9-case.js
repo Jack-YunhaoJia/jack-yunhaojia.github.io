@@ -20,6 +20,6 @@ function m9CaseHTML(visual,thumbs){
  </section>
  <section class="m9-section" id="m9-analysis"><p class="label">04 / FEEDBACK SYNTHESIS</p><h2>从一条反馈，理解一个体验问题。</h2><p>用户反馈不仅是评分或偏好，也包含使用习惯、预期与情境信息。分析工作需要整理表达中的共同主题，保留个体差异，并区分观察、用户自述和研究解释。</p><ol class="m9-analysis-flow"><li><h3>整理表达</h3><p>将分散的口述与问卷信息按问题组织，保留其原有语境。</p></li><li><h3>归纳主题</h3><p>识别反复出现的体验议题，同时记录不同意见与例外。</p></li><li><h3>对照来源</h3><p>结合专业访谈、用户评价和观察记录，审慎解释信息之间的关系。</p></li><li><h3>支持讨论</h3><p>用清晰的问题表述和研究材料，支持后续设计与技术协作。</p></li></ol></section>
  <section class="m9-section" id="m9-outcomes"><p class="label">05 / CONTRIBUTION & DELIVERABLES</p><h2>连接专业知识、研究方法与设计协作。</h2><div class="m9-columns"><article><h3>研究材料</h3><p>研究框架与背景梳理，为跨学科讨论建立共同基础。</p></article><article><h3>研究工具</h3><p>访谈、问卷与体验评价方案，支撑研究实施与反馈收集。</p></article><article><h3>研究表达</h3><p>结构化反馈与研究报告，将专业判断和用户体验转化为可讨论的问题。</p></article></div></section>
- <footer class="reader-end"><a href="#">返回视觉作品集</a><button data-next-project="micro">下一个研究 / 情感计算</button></footer>
+ <footer class="reader-end"><a href="#">返回作品集</a><button data-next-project="micro">下一个研究 / 情感计算</button></footer>
  </article></div>`;
 }

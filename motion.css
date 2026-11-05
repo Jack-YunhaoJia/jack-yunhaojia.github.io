@@ -63,3 +63,28 @@ body:not(.overview) #gallery .slide-hit[aria-current=true][data-fit=contain] img
 /* A clipped image layer interpolates cover/contain without a final-frame crop jump. */
 .transition-cover{overflow:hidden;contain:layout paint;pointer-events:none}
 .transition-cover>img{position:absolute;max-width:none;object-fit:fill;will-change:left,top,width,height,opacity}
+
+/* One intrinsic-height footer keeps metadata, actions and links in separate columns. */
+#gallery:after{display:none}
+#gallery .gallery-bottom{position:absolute;left:50px;right:50px;bottom:25px;z-index:5;display:grid;grid-template-columns:minmax(0,1fr) 150px minmax(0,1fr);align-items:end;gap:24px 32px;color:var(--ink);pointer-events:none}
+.gallery-bottom>div{min-width:0}.gallery-bottom a,.gallery-bottom button{pointer-events:auto}
+#gallery .project-info #project-kicker{position:static;width:auto;margin:0 0 14px;font:13px/1.75 var(--sans);letter-spacing:.2px;color:inherit;animation:none}
+#gallery .project-info #project-en{display:block;font:7px/1.7 ui-monospace,monospace;letter-spacing:.8px;margin-bottom:6px;overflow-wrap:anywhere}
+#gallery .project-info #project-context{font:9px/1.35 var(--sans);margin:0}
+#gallery .project-details #project-summary{position:static;width:auto;max-width:380px;margin:0 0 18px auto;font:11px/1.85 var(--sans);color:inherit;text-shadow:none;animation:none}
+#gallery .gallery-bottom .footer-links{display:flex;flex-flow:row wrap;justify-content:flex-end;gap:6px 16px;align-items:center;font:10px/1.6 var(--sans);min-width:0;color:inherit}
+#gallery .gallery-bottom .footer-links a{color:inherit;white-space:nowrap}
+#gallery .project-action{display:flex;flex-direction:column;align-items:center;gap:14px;padding:3px 6px}
+#gallery .gallery-bottom .read-button{position:relative;inset:auto;transform:none;margin:0;padding:14px 20px;min-width:130px;min-height:64px;border:1px solid currentColor;border-radius:8px;background:color-mix(in srgb,var(--ink) 9%,var(--bg));color:var(--ink);font-size:12px;line-height:1.4;animation:explore-breathe 2.8s ease-in-out infinite;transition:background .25s,box-shadow .25s}
+#gallery .read-button .explore-stem{display:none}#gallery .read-button .explore-mark{position:absolute;right:10px;top:12px;width:10px;height:10px}
+#gallery .gallery-bottom .read-button:hover,#gallery .gallery-bottom .read-button:focus-visible{animation:none;background:var(--ink);color:var(--bg);box-shadow:0 0 0 5px color-mix(in srgb,var(--ink) 15%,transparent)}
+#gallery .gallery-bottom #motion-control{position:static;inset:auto;transform:none;opacity:.75;padding:4px 0;min-height:28px;font:9px/1.5 var(--sans);color:inherit}
+#gallery .gallery-bottom .gesture-hint{display:none}
+.overview .gallery-bottom .project-info,#gallery.overview .project-info{visibility:hidden}
+.overview .gallery-bottom #project-summary,.overview .gallery-bottom #read-project{visibility:hidden;pointer-events:none}
+.overview .gallery-bottom .gesture-hint{display:block;position:absolute;bottom:0;left:0;font:10px/1.7 var(--sans);margin:0}
+@keyframes explore-breathe{0%,100%{transform:scale(1);box-shadow:0 0 0 0 transparent}50%{transform:scale(1.035);box-shadow:0 0 0 4px color-mix(in srgb,var(--ink) 12%,transparent)}}
+@media(max-width:760px){#gallery .gallery-bottom{left:24px;right:24px;bottom:18px;grid-template-columns:minmax(0,1fr) 120px;gap:16px 20px}#gallery .project-info{grid-column:1;grid-row:1}#gallery .project-action{grid-column:2;grid-row:1;gap:7px;padding:0}#gallery .project-details{grid-column:1/-1;grid-row:2;display:flex;align-items:flex-end;gap:20px}#gallery .project-details #project-summary{flex:1;margin:0;font-size:9px;line-height:1.75;max-width:none}#gallery .gallery-bottom .footer-links{flex:0 0 86px;flex-direction:column;gap:3px;align-items:flex-end;font-size:9px}#gallery .project-info #project-kicker{font-size:11px;line-height:1.6;margin-bottom:9px}#gallery .project-info #project-en{font-size:6px;margin-bottom:4px}#gallery .project-info #project-context{font-size:8px}#gallery .gallery-bottom .read-button{min-width:110px;min-height:60px;padding:13px 16px;font-size:11px}#gallery .gallery-bottom #motion-control{font-size:8px;min-height:20px}.overview .gallery-bottom .gesture-hint{bottom:0;max-width:60%;font-size:9px}}
+@media(max-height:740px){#gallery .gallery-bottom{bottom:16px}#gallery .project-info #project-kicker{font-size:11px;margin-bottom:8px}#gallery .project-details #project-summary{font-size:10px;line-height:1.7;margin-bottom:12px}#gallery .project-action{gap:8px}}
+@media(prefers-reduced-motion:reduce){#gallery .gallery-bottom .read-button{animation:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--ink) 12%,transparent)}}
+.motion-paused #gallery .gallery-bottom .read-button{animation:none}

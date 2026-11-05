@@ -77,6 +77,6 @@ function cosmicCaseHTML(visual,thumbs){
  </section>
 
  <section class="cosmic-section cosmic-evidence"><div class="cosmic-section-head"><p class="label">SOURCE MATERIALS</p><h2>项目与研究原文</h2></div><div class="cosmic-docs"><a href="assets/docs/cosmic-report.pdf" target="_blank" rel="noopener"><span class="label">PROJECT REPORT / 4 PAGES</span><h3>Cosmic-R 文字报告</h3><p>团队设计思路、纹理概念、技术路线与未来工作。</p><span>阅读项目报告 PDF ↗</span></a><a href="assets/docs/cosmic-thesis.pdf" target="_blank" rel="noopener"><span class="label">UNDERGRADUATE THESIS / 2024</span><h3>本科毕业论文</h3><p>实验设计、行为与访谈记录、映射归纳、声音及软件实现。</p><span>阅读本科毕业论文 PDF ↗</span></a></div></section>
- <footer class="reader-end"><a href="#">返回视觉作品集</a><button data-next-project="evaluation">下一个研究 / 问界 M9</button></footer>
+ <footer class="reader-end"><a href="#">返回作品集</a><button data-next-project="evaluation">下一个研究 / 问界 M9</button></footer>
  </article></div>`;
 }
