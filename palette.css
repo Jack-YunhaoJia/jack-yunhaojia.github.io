@@ -1,0 +1,40 @@
+/* Eight supplied color pairs. Pair accents are separate from readable text. */
+:root{--bg:#121212;--ink:#E89AAE;--accent:#E89AAE;--muted:#E89AAE;--title-ink:#E89AAE;--rail:transparent;--rail-ink:#E89AAE;--paper:#FAF2E0;--paper-ink:#2B333E;--paper-secondary:#3E4855;--paper-link:#0E61AC;--paper-line:#B6B2A7;--line:color-mix(in srgb,var(--ink) 25%,transparent)}
+body{background:var(--bg);color:var(--ink)}
+#load-status{background:#121212;color:#E89AAE}.asset-failed{background:#2B333E}.skip-link{background:#FFFFBE;color:#121212}
+#gallery:after{content:'';position:absolute;left:0;right:0;bottom:0;height:104px;background:var(--rail);z-index:1;pointer-events:none;transition:background 1s cubic-bezier(.16,1,.3,1)}
+.hero-copy h1,.hero-copy .departing-title{color:var(--title-ink)}
+.gallery-footer,.gallery-footer a{color:var(--rail-ink)}#motion-control{color:var(--rail-ink);opacity:.85}.overview #motion-control{opacity:.85}#project-summary{color:var(--ink)}
+.project-side{opacity:1;color:var(--ink)}.project-side span{opacity:.85}
+#gallery a:hover,#gallery button:hover,.masthead a:hover,.masthead button:hover{color:var(--ink)}
+button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline-color:var(--ink)}
+#gallery[data-palette=cream-lavender] #project-summary{color:#2B333E}
+#sheet{background:var(--sheet-bg,#121212);color:var(--sheet-ink,#E89AAE);--accent:var(--sheet-accent,#E89AAE);--muted:var(--sheet-muted,#E89AAE);--line:color-mix(in srgb,var(--sheet-ink,#E89AAE) 28%,transparent)}
+#sheet::backdrop{background:#0A090CEB}#sheet a:hover,#sheet button:hover{color:inherit;opacity:.78}#sheet a:focus-visible,#sheet button:focus-visible,#sheet input:focus-visible,#sheet summary:focus-visible{outline-color:currentColor}
+#sheet .sheet-bar{border-color:var(--line)}#sheet .label,#sheet .timeline .label{color:var(--sheet-accent)}
+#sheet .about-hero p,#sheet .timeline p,#sheet .skills p,#sheet .contact-view .intro{color:var(--sheet-muted)}
+#sheet .portrait{background:var(--sheet-soft)}#sheet .portrait figcaption{color:#2B333E}.about-hero h1 span,.contact-view h1 span{color:var(--sheet-accent)}
+#sheet .about-numbers strong,#sheet .skills a{color:var(--sheet-accent)}#sheet .about-numbers small{color:var(--sheet-muted)}
+#sheet .inline-contact{background:#BE96CD;color:#121212}#sheet .inline-contact a{border-color:#121212;color:#121212}
+#sheet .contact-email{border-color:var(--sheet-accent)}#sheet .contact-options .label,#sheet .contact-bottom{color:var(--sheet-muted)}#sheet #copy-status{color:var(--sheet-ink)}
+#sheet[data-kind=archive] .archive-tools{border-color:#1E9BFF}#sheet[data-kind=archive] .archive-head .label{color:#121212}#sheet[data-kind=archive] .archive-head>p:last-child{color:#2B333E}
+#sheet[data-kind=archive] .filters button{color:#121212;border-color:#12121260}#sheet[data-kind=archive] .filters button.active{background:#1E9BFF;color:#121212;border-color:#1E9BFF}
+#sheet[data-kind=archive] .search-label input{color:#121212;border-color:#1E9BFF}#sheet[data-kind=archive] .search-label input::placeholder{color:#2B333E;opacity:1}
+#sheet[data-kind=archive] .archive-count,#sheet[data-kind=archive] .archive-row summary .label,#sheet[data-kind=archive] .archive-row summary>small,#sheet[data-kind=archive] .archive-detail,#sheet[data-kind=archive] .archive-empty{color:#2B333E}
+#sheet[data-kind=archive] .archive-detail a{color:#002CB0;text-decoration:underline;text-underline-offset:4px}#sheet[data-kind=archive] .archive-more{background:#1E9BFF;color:#121212;border-color:#1E9BFF}
+#sheet[data-kind=contact] .contact-options article{border-color:#FFFFBE}#sheet[data-kind=contact] .contact-email{color:#121212}#sheet[data-kind=contact] .contact-bottom{border-color:#FFFFBE}
+#sheet[data-kind=project]{background:var(--case-bg);color:var(--case-ink);--accent:var(--case-ink)}#sheet[data-kind=project] .sheet-bar{color:var(--case-ink)}
+.case-visual:first-child:after{content:'';position:absolute;bottom:0;left:0;right:0;height:100px;background:var(--case-rail);z-index:0;pointer-events:none}.case-visual:first-child>.case-read,.case-visual:first-child>.case-index{z-index:2;color:var(--case-rail-ink)}.case-visual:first-child figcaption{z-index:2;color:var(--case-rail-ink);opacity:1}
+.case-thumbnails{color:var(--case-ink)}.case-thumbnails button{opacity:.75}.case-thumbnails button.active{opacity:1}.case-thumbnails button:last-child{opacity:1}
+.media-slide:nth-child(even){background:#121212;color:#E89AAE}
+.case-research{background:var(--paper);color:var(--paper-ink)}.case-research .reading-head .label{color:var(--paper-link)}.case-research .reading-head>p:last-of-type,.case-research .reading-meta,.case-research .reading-section p{color:var(--paper-secondary)}.case-research .reading-meta b{color:var(--paper-ink)}
+.case-research .reading-section.question p{color:var(--paper-ink)}.case-research .method-tags span{color:var(--paper-ink);border-color:var(--paper-line)}.case-research .reading-meta,.case-research .reading-section,.case-research .reader-end{border-color:var(--paper-line)}
+.case-research .case-boundary{background:#FFFFBE;color:var(--paper-ink)}.case-research .case-boundary p{color:var(--paper-secondary)}.case-research .evidence-links a,.case-research .reader-end button,.case-research .reader-end a{color:var(--paper-link);border-color:var(--paper-link)}
+#sheet[data-view=research] .sheet-bar{color:var(--paper-link)}#sheet[data-view=research] .sheet-bar:before{background:var(--paper)}#sheet[data-view=research] .case-thumbnails{color:var(--paper-link)}
+#toast{background:#66D4C8;color:#002CB0}
+@media(max-width:760px){#gallery:after{height:104px}#sheet[data-view=research] .case-thumbnails{background:var(--paper);box-shadow:0 0 0 10px var(--paper);color:var(--paper-link)}.case-visual:first-child:after{height:94px}.case-visual:first-child figcaption{color:var(--case-ink)}}
+.case-display{color:var(--case-title,var(--case-ink))}#sheet[data-kind=contact] .label{color:#121212}
+@media(max-width:760px){#sheet[data-kind=project][data-palette=cream-lavender]:not([data-view=research]) .case-thumbnails{color:#2B333E}}
+#sheet[data-kind=project] .sheet-bar .label{color:var(--case-ink)}#sheet[data-kind=project] .case-research .label,#sheet[data-kind=project][data-view=research] .sheet-bar .label{color:var(--paper-link)}
+#gallery .gallery-footer a:hover,#gallery #motion-control:hover{color:var(--rail-ink)}#sheet a:hover,#sheet button:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.masthead nav a:hover,.masthead nav button:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}.overview .gallery-footer .gesture-hint{opacity:1}.project-side span{opacity:1}

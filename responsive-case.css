@@ -1,0 +1,26 @@
+/* Keep the research column and its image rail balanced as the window widens. */
+@media(min-width:1101px){
+ #sheet[data-kind=project]{--case-shell-width:min(1480px,calc(100vw - 96px));--case-rail-space:112px}
+ #sheet[data-kind=project] .case-research .reading-wrap{
+  width:calc(var(--case-shell-width) - var(--case-rail-space));max-width:none;
+  margin-left:calc((100% - var(--case-shell-width)) / 2);margin-right:0;
+ }
+ #sheet[data-kind=project][data-view=research] .case-thumbnails{right:calc((100% - var(--case-shell-width)) / 2)}
+ #sheet[data-kind=project][data-view=research] .sheet-bar{left:calc((100% - var(--case-shell-width)) / 2);right:calc((100% - var(--case-shell-width)) / 2)}
+ #sheet[data-kind=project][data-view=research] .sheet-bar:before{position:fixed;inset:0 0 auto;height:100px}
+ #sheet .case-research .reading-head{max-width:none}
+}
+/* Use the wide canvas for a title and an introduction, rather than longer text lines. */
+@media(min-width:1280px){
+ #sheet .m9-page .reading-head,#sheet .schubert-page .reading-head,#sheet .river-page .reading-head{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:24px 48px;align-items:start;
+ }
+ #sheet :is(.m9-page,.schubert-page,.river-page) .reading-head>.label{grid-column:1 / -1;margin:0}
+ #sheet :is(.m9-page,.schubert-page,.river-page) .reading-head>h1{grid-column:1;grid-row:2 / 5;margin:0;overflow-wrap:anywhere}
+ #sheet :is(.m9-page,.schubert-page,.river-page) .reading-head>p:not(.label){grid-column:2;margin:0;max-width:60ch}
+ #sheet :is(.m9-page,.schubert-page,.river-page) .reading-head>.method-tags{grid-column:2;margin:0}
+ #sheet .m9-page .reading-head h1{line-height:1.2;font-size:clamp(44px,3.8vw,61px)}
+ #sheet .m9-page .reading-head>h1{grid-row:2 / 4}
+ #sheet .m9-page .reading-head h1 span{margin-top:20px;line-height:1.5}
+ #sheet .m9-page .reading-meta{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px}
+}
